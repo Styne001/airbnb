@@ -3,19 +3,16 @@ import React from "react"
 export default function Card(props) {
     return (
         <section className="card">
-            <img src="/src/assets/katie.png" className="cardImage" />
+            <img src={`src/assets/${props.img}`} className="cardImage" />
             <div>
                 <div className="cardStats">
-                    <img src={props.img} className="cardStar" />
+                    <img src="src/assets/Star1.png" className="cardStar" />
                     <span className="cardRating">{props.rating}</span>
-                    <span className="cardCount">({props.count}).</span>
+                    <span className="cardCount">({props.reviewCount}).</span>
                     <span className="cardCountry">{props.country}</span>
                 </div>
                 <p className="cardContent">{props.content}</p>
-                <p className="cardPrice">
-                    <span className="subscription">From ${props.cost}</span>
-                    <span className="subscriptionType">/ {props.subscriptionType}</span>
-                </p>
+                <p><span className="subscription">From ${props.cost}</span> / person</p>
             </div>
         </section>
     )

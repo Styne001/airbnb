@@ -5,32 +5,14 @@ function Items() {
     return (
         <div className="cards">
             <Card 
-                img="/src/assets/Star1.png"
+                img="katie.png"
                 rating="5.0"
-                count="6"
+                reviewCount={6}
                 country="USA"
                 content="Life lessons with Katie Zaferes"
-                cost="136"
-                subscriptionType="person"
+                cost={136}
             />
-            <Card 
-                img="/src/assets/Star1.png"
-                rating="5.0"
-                count="6"
-                country="USA"
-                content="Life lessons with Katie Zaferes"
-                cost="136"
-                subscriptionType="person"
-            />
-            <Card 
-                img="/src/assets/Star1.png"
-                rating="5.0"
-                count="6"
-                country="USA"
-                content="Life lessons with Katie Zaferes"
-                cost="136"
-                subscriptionType="person"
-            />
+            
         </div>
     )
 }
