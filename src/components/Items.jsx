@@ -1,18 +1,24 @@
 import React from "react"
 import Card from "./Card"
+import data from "../data"
 
 function Items() {
-    return (
-        <div className="cards">
+    const cards = data.map(items => {
+        return (
             <Card 
-                img="katie.png"
-                rating="5.0"
-                reviewCount={6}
-                country="USA"
-                content="Life lessons with Katie Zaferes"
-                cost={136}
+                key={items.id}
+                img={items.coverImg}
+                rating={items.stats.rating}
+                reviewCount={items.stats.reviewCount}
+                location={items.location}
+                title={items.title}
+                price={items.price}
             />
-            
+        )
+    })
+    return (
+        <div className="cards-list">
+            {cards}
         </div>
     )
 }
