@@ -66,6 +66,17 @@ section {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.card--badge {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: #FFFFFF;
+  padding: 3px 5px;
+  border-radius: 2px;
+  font-weight: bold;
 }
 
 .cardStats {
@@ -78,6 +89,7 @@ section {
   width: 176px;
   height: 235px;
   border-radius: 9px;
+  margin-bottom: 9px;
 }
 
 .cardStar{

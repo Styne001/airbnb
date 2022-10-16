@@ -3,16 +3,11 @@ import Card from "./Card"
 import data from "../data"
 
 function Items() {
-    const cards = data.map(items => {
+    const cards = data.map(item => {
         return (
             <Card 
-                key={items.id}
-                img={items.coverImg}
-                rating={items.stats.rating}
-                reviewCount={items.stats.reviewCount}
-                location={items.location}
-                title={items.title}
-                price={items.price}
+                key={item.id}
+                item={item}
             />
         )
     })
@@ -22,5 +17,4 @@ function Items() {
         </div>
     )
 }
-
 export default Items
